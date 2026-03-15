@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Alice&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body{
+    font-family: "Alice";
+    background: linear-gradient(135deg, #B6AE9F, #DEDED1, #929AAB, #F7F7F7);
+    background-size: 300% 300%;
+    animation: gradientMove 10s ease infinite;
+    }
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* tiêu đề */
+    .contact-title{
+        text-shadow: 1px 1px 1px #000000;
+        font-family: "Agbalumo";
+        text-align:center;
+        margin-top:40px;
+        color: rgb(76, 59, 55);
+        font-size: 40px;
+        background-color: #b6ae9f;
+        border-radius: 20px ;
+        border: 2px solid #9b9589;
+        margin-left: 500px;
+        margin-right: 450px;
+        padding-bottom: 10px;
+    }
+
+    /* khung liên hệ */
+    .contact-container{
+    width:60%;
+    margin:auto;
+    background:#DEDED1;
+    padding:30px;
+    padding-bottom: 0;
+    margin-top:30px;
+    border-radius:25px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    
+    }
+
+    /* input */
+    input, textarea{
+    width:880px;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:17px;
+    font-family: "Alice";
+    }
+    label{
+        font-weight: bold;
+        margin-left: 15px;
+        font-family: "Alice";
+         font-size:17px;
+    }
+
+    /* nút gửi */
+    button{
+    background:#B6AE9F;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+     font-family: "Alice";
+    }
+
+    button:hover{
+    background:#929aab;
+    }
+
+    /* thông tin shop */
+    .contact-info{
+    margin-top:30px;
+    line-height:1.8;
+    float:left;
+    width:300px;}
+
+    .info-khung{
+    display:flex;
+    align-items:center;
+    margin-top:30px;
+    }
+
+    .contact-img{
+        width:400px;      
+        margin-left:auto; 
+    }
+
+
+    </style>
+    </head>
+
+    <body>
+
+    <h1 class="contact-title">Liên hệ với chúng tôi</h1>
+
+    <div class="contact-container">
+
+    <form method="POST" action="../php/LienHe.php">
+
+    <label>Họ và tên</label>
+    <input type="text" name="hoten" placeholder="Nhập họ tên">
+
+    <label>Email</label>
+    <input type="email" name="email" placeholder="Nhập email">
+
+    <label>Số điện thoại</label>
+    <input type="text" name="sdt" placeholder="Nhập số điện thoại">
+
+    <label>Nội dung</label>
+    <textarea rows="5" name="noidung" placeholder="Nhập nội dung liên hệ"></textarea>
+
+    <button type="submit" name="gui">Gửi liên hệ</button>
+
+    </form>
+
+    <div class="info-khung">
+
+    <div class="contact-info">
+        <h3>Thông tin cửa hàng</h3>
+        <p>📍 Địa chỉ: 123, Nguyễn Văn Cừ, Cần Thơ, Việt Nam</p>
+        <p>📞 Điện thoại: 0396 936 805</p>
+        <p>📧 Email: dailyladyfashion@gmail.com</p>
+    </div>
+
+    <img src="../images/lienhegoc.png" class="contact-img"/>
+
+    </div>
+
+    </body>
+    </html>

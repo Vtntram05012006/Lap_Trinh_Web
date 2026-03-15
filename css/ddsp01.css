@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Alice&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+    body{
+    background: linear-gradient(135deg, #B6AE9F, #DEDED1, #929AAB, #F7F7F7);
+    background-size: 300% 300%;
+    animation: gradientMove 10s ease infinite;
+     margin:0;
+    font-family: "Alice";
+    }
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+/* khổ giấy ngang */
+
+.page{
+    width:1000px;
+    background:white;
+    margin:30px auto;
+    box-shadow:0 0 10px gray;
+}
+
+/* chia cột */
+
+.container{
+    display:flex;
+    height:100%;
+}
+
+/* bên trái */
+
+.left{
+    width:35%;
+    padding:35px;
+    font-size: 20px;
+}
+
+.left h3{
+    font-size: 25px;
+}
+.left h1{
+    font-size: 50px;
+    margin-bottom:30px;
+    font-family:"Agbalumo";
+}
+.block{
+    margin-bottom:20px;
+}
+
+/* bên phải */
+
+.right{
+    width:65%;
+    padding:40px;
+    font-size: 20px;
+}
+.right h1{
+     font-family:"Agbalumo";
+}
+.right h3{
+    font-size: 25px;
+}
+.right img{
+    margin-left: 120px;
+    border-radius: 20px;
+}
+
+.anh{
+    width:300px;
+    margin-bottom:20px;
+}
+
+.mota{
+    color:#666;
+}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Alice&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+    body{
+    background: linear-gradient(135deg, #B6AE9F, #DEDED1, #929AAB, #F7F7F7);
+    background-size: 300% 300%;
+    animation: gradientMove 15s ease infinite;
+    }
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+
+    /* Banner quảng cáo */
+    .banner{
+        background:url("../images/nensp.png") center/cover no-repeat;
+        height:400px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        color:rgb(19, 19, 19);
+        text-align:center;
+        
+    }
+
+    .banner h1{
+        font-family: "Agbalumo";
+        border-radius: 20px;
+        box-shadow: 0 0 50px #FBF3D1;
+        background-color: #FBF3D1;
+        font-size:50px;
+        padding:20px;
+        color: rgb(76, 59, 55);
+    }
+
+
+    /* tiêu đề */
+    .title{
+        text-shadow: 1px 1px 0 rgb(255, 255, 255);
+        font-family: "Agbalumo";
+        text-align:center;
+        margin-top:40px;
+        color: rgb(76, 59, 55);
+        font-size: 40px;
+    }
+
+    /* sản phẩm */
+    .product{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    padding:40px;
+    }
+
+    .related-products{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin:40px;
+    }
+
+    .card{
+    font-family: "Alice";
+    border:1px solid #97998d;
+    background:#EEEEEE;
+    width:250px;
+    border-radius:10px;
+    text-align:center;
+    padding:15px;
+    margin: 10px;
+    }
+
+    .card img{
+        width:100%;
+        height:300px;
+        object-fit:cover;
+        border-radius:10px;
+    }
+
+    .card h3{
+        color: black;
+    }
+
+    .price{
+        color:red;
+        font-size:20px;
+        margin:10px 0;
+    }
+
+    button{
+        background:#ff4d6d;
+        color:white;
+        border:none;
+        padding:10px 20px;
+        border-radius:5px;
+        cursor:pointer;
+    }
+
+    button:hover{
+        background:#e63950;
+    }
+
+    /* footer */
+    footer{
+        background:#171717;
+        text-align:left;
+        padding:30px 0;
+    }
+
+    .footer img{
+    margin:10px;
+    }
+
+    .footer{
+    display:flex;
+    justify-content:space-between;
+    padding:40px 80px;
+    background:#EEEEEE;
+    border: 2px solid #B6AE9F;
+    color: rgb(76, 59, 55);
+    font-family: "Agbalumo";
+    }
+
+    .footer-left{
+    max-width:500px;
+    line-height:1.8;
+    }
+
+    .social img{
+    width:22px;
+    margin-right:15px;
+    cursor:pointer;
+    }
+
+    .footer-right{
+    text-align:right;
+    }
+
+    .footer-menu{
+    margin-bottom:20px;
+    }
+
+    .footer-menu a{
+    
+    color: rgb(76, 59, 55);
+    margin-left:25px;
+    text-decoration:none;
+    font-size:15px;
+    }
+
+    .footer-menu a:hover{
+    text-decoration:underline;
+    }
+
+    .bct{
+    width:160px;
+    }
+
+    .zalo-chat{
+    position:fixed;
+    right:20px;
+    bottom:80px;
+    }
+
+    .zalo-chat img{
+    width:50px;
+    cursor:pointer;
+    }
+    a{
+    text-decoration: none;
+    }
+    </style>
+<!---------------------------------------------------------------------------------------------------------->
+
+    </head>
+    <body>
+
+    <!-- Banner -->
+    <div class="banner">
+        <h1>Bộ Sưu Tập Thời Trang Mới 2026</h1>
+    </div>
+
+    <h1 class="title">Sản Phẩm Nổi Bật</h1>
+
+    <!-- Sản phẩm -->
+    <div class="product">
+    <a href ="chitietsanpham/SP01.html">
+        <div class="card">
+        <img src="../images/va1.webp">
+        <h3>Đầm dự tiệc</h3>
+        <p class="price">450.000đ</p>
+        </div>
+    </a>
+
+    <a href ="chitietsanpham/sp02.html">
+        <div class="card">
+        <img src="../images/va2.webp">
+        <h3>Váy trễ vai</h3>
+        <p class="price">320.000đ</p>
+       
+        </div>
+    </a>
+
+    <a href ="chitietsanpham/sp03.html">
+        <div class="card">
+        <img src="../images/va3.webp">
+        <h3>Váy Babydoll</h3>
+        <p class="price">290.000đ</p>
+        
+        </div>
+    </a>
+
+    <a href ="chitietsanpham/sp04.html">
+        <div class="card">
+        <img src="../images/va4.jpg">
+        <h3>Đầm đuôi cá</h3>
+        <p class="price">490.000đ</p>
+        
+        </div>
+    </a>
+
+    <a href ="chitietsanpham/sp05.html">
+        <div class="card">
+        <img src="../images/va5.jpg">
+        <h3>Đầm hai dây</h3>
+        <p class="price">450.000đ</p>
+       
+        </div>
+    </a>
+
+    <a href ="chitietsanpham/sp06.html">
+        <div class="card">
+        <img src="../images/va6.jpg">
+        <h3>Đầm cổ yếm</h3>
+        <p class="price">400.000đ</p>
+        
+        </div>
+    </a>
+
+    <a href ="chitietsanpham/sp07.html">
+        <div class="card">
+        <img src="../images/7.jpg">
+        <h3>Váy Ren Lá</h3>
+        <p class="price">1.450.000đ</p>
+      
+        </div>
+    </a>
+
+    <a href ="chitietsanpham/sp08.html">
+        <div class="card">
+        <img src="../images/va8.webp">
+        <h3>Váy cổ yếm đính đá</h3>
+        <p class="price">650.000đ</p>
+        </div>
+    </a>
+
+    </div>
+
+
+    <h1 class="title">Sản phẩm liên quan</h1>
+
+    <div class="related-products">
+
+    <a href ="chitietsanpham/sp09.html">       
+        <div class="card">
+        <img src="../images/va9.jpg">
+        <h3>[CARLOS DRESS] Đầm thiết kế </h3>
+        <p class="price">2.080.000đ</p>
+       
+        </div>
+    </a>
+
+    <a href ="chitietsanpham/sp10.html">
+        <div class="card">
+        <img src="../images/va10.jpg">
+        <h3>Váy sơ mi tay bồng</h3>
+        <p class="price">235.000đ</p>
+        </div>
+    </a>
+
+    <a href ="chitietsanpham/sp11.html">
+        <div class="card">
+        <img src="../images/va11.webp">
+        <h3>Váy cúp ngực</h3>
+        <p class="price">150.000đ</p>
+        </div>
+    </a>
+
+    <a href ="chitietsanpham/sp12.html">
+        <div class="card">
+        <img src="../images/va12.webp">
+        <h3>Đầm Basic Hàn</h3>
+        <p class="price">265.000đ</p>
+        </div>
+    </a>
+    </div>
+
+
+    <footer class="footer">
+
+    <div class="footer-left">
+
+    <p class="copyright">© DailyLady</p>
+    <p>Hotline: 0396 936 805</p>
+
+    <div class="social">
+    <img src="../images/Facebook.png">
+    <img src="../images/zalo.png">
+    </div>
+
+    </div>
+
+    <div class="footer-right">
+
+    <div class="footer-menu">
+    <a href="#">Về chúng tôi</a>
+    <a href="lienhe.html">Liên hệ</a>
+    </div>
+
+    <img src="../images/bocongthuong.png" class="bct">
+
+    </div>
+
+    </footer>
+
+    </body>
+    </html>

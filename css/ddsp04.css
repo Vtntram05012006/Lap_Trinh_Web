@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Alice&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+    body{
+    background: linear-gradient(135deg, #B6AE9F, #DEDED1, #929AAB, #F7F7F7);
+    background-size: 300% 300%;
+    animation: gradientMove 10s ease infinite;
+     margin:0;
+    font-family: "Alice";
+    }
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+/* khung giấy ngang */
+.khung{
+    width:1250px;
+    margin:auto;
+    display:flex;
+    background:white;
+    box-shadow:0 0 20px gray;
+}
+
+/* bên trái */
+.trai{
+    width:40%;
+    background:#929AAB;
+    padding:40px;
+}
+
+.trai h1{
+    font-family: "Agbalumo";
+}
+.shop {
+    text-shadow: 1px 1px 0 white;
+    font-size: 50px;
+    color: rgb(76, 59, 55);
+    text-align: center;
+    font-family: "Agbalumo";
+    margin-top: 0;
+    padding-top: 0;
+   
+}
+.avatar{
+    width:300px;
+    height:300px;
+    border-radius:20px;
+    object-fit:cover;
+    display:block;
+    margin:auto;
+}
+
+.ten{
+    text-align:center;
+    margin-top:20px;
+}
+
+.chucdanh{
+    text-align:center;
+    letter-spacing:3px;
+    font-size:18px;
+}
+
+.box{
+    font-size: 20px;
+    margin-top:25px;
+}
+
+.box h3{
+    color: white;
+    background:#393E46;
+    padding:6px;
+    font-size: 20px;
+}
+
+.gia{
+    color: red;
+    font-size:30px;
+    font-weight:bold;
+}
+
+/* bên phải */
+
+.phai{
+    width:60%;
+    padding:40px;
+    margin-top: 10px;
+}
+
+.phai p{
+    font-size: 20px;
+}
+
+.tieude{
+    font-size: 20px;
+    color: white;
+    background:#393E46;
+    padding:6px 10px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+ul{
+    font-size: 20px;
+    padding-left:20px;
+}
